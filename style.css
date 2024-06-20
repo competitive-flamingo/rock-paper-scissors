@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Roboto, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FEAE6F;
+}
+
+img {
+    max-height: 200px;
+    width: 150px;
+}
+
+.info {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info > * {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.info > h1 {
+    font-size: 50px;
+}
+
+.info > p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    margin: 40px;
+    padding: 20px 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    min-width: 800px;
+}
+
+.container p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container h1 {
+    font-size: 40px;
+    align-self: center;
+    height: fit-content;
+}
+
+.human-side, .computer-side {
+    max-width: 900px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #F6DCAC;
+    border: 3px solid #01204E;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.choices {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.choice{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #01204E;
+    min-width: 0;
+}
+
+.choice > * {
+    min-width: 0;
+}
+
+.choices .choice {
+    cursor: pointer;
+}
+
+.evaluation {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 10px 200px;
+}
+
+.evaluation > * {
+    width: 500px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    border: 2px solid #01204E;
+    background-color: #F6DCAC;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 390px;
+    text-align: center;
+    font-style: italic;
+}
+
+.evaluation .button-container {
+    width: 150px;
+    height: auto;
+    border-width: 0;
+    background-color: transparent;
+}
+
+.evaluation button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.evaluation span {
+    display: inline-block;
+    width: 40px;
+}

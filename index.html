@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="info">
+        <h1>Rock Paper Scissors</h1>
+        <p>The first to 5 wins!</p>
+    </div>
+    <div class="container">
+        <div class="human-side">
+            <h1>Human</h2>
+            <div class="choices">
+                <div class="choice">
+                    <div class="image-frame"><img class="rock" src="./images/rock.png" alt="rock"></div>
+                    <p>Rock</p>
+                </div>
+                <div class="choice">
+                    <div class="image-frame"><img class="paper" src="./images/paper.png" alt="paper"></div>
+                    <p>Paper</p>
+                </div>
+                <div class="choice">
+                    <div class="image-frame"><img class="scissors" src="./images/scissors.png" alt="scissors"></div>
+                    <p>Scissors</p>
+                </div>
+            </div>
+        </div>
+        <div class="computer-side">
+            <h1>Computer</h2>
+            <div class="choice">
+                <div class="image-frame"></div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="evaluation">
+        <div class="log"></div>
+        <div class="button-container"></div>
+        <div class="results">Won = <span class="won">0</span> | Lost = <span class="lost">0</span> | Draw = <span class="draw">0</span></div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
